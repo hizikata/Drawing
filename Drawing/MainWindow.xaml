@@ -6,7 +6,29 @@
         xmlns:local="clr-namespace:Drawing"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel LastChildFill="False">
+        <ToolBar DockPanel.Dock="Top" Height="36">
+
+        </ToolBar>
+        <Canvas>
+            <Path Stroke="Black" StrokeThickness="2" Fill="Orange" Height="115.896" Stretch="Fill" Width="163.447">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint="1,24" IsClosed="False">
+                            <PathFigure.Segments>
+                                <LineSegment Point="35,58"/>
+                                <!--顺时针方向-->
+                                <ArcSegment Size="55,100" Point="59,48" SweepDirection="Clockwise"/>
+                                <LineSegment Point="59,1"/>
+                                <!--逆时针方向-->
+                                <ArcSegment Size="80,80" Point="1,24" SweepDirection="Counterclockwise"/>
+                            </PathFigure.Segments>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+            <Path  Stroke="Black" StrokeThickness="2" 
+                   Data="M 100,100 C 100,110 300,300 600,600"/>
+        </Canvas>
+    </DockPanel>
 </Window>
